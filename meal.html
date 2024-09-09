@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Weight Tracker</title>
+    <title>Meal Tracker</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
@@ -45,20 +45,24 @@
                 </div>
             </div>
         </nav>
-        <div class="weightTrackerMainContainerInfo">
-            <div class="weightTrackerBackgroundContainer">
-                <div class="weightTracker">
-                    <img src="Images/weight.png" alt="">
+        <div class="mealTrackerMainContainer">
+            <div class="mealTrackerBackgroundContainer">
+                <div class="mealTracker">
+                    <img src="Images/main.png" alt="" width="700px" height="300px">
                 </div>
-                <p>Weight Tracker</p>
+                <p>Meal Tracker</p>
             </div>
-            <div class="weightInfoMainContainer">
-                <div class="singleDayInfo">
-                    <div class="dayAndMonthWithDateContainer">
-                        <div class="dayWithDate">
-                            <span>Today, Thursday</span>
-                            <p>24 April 2023</p>
-                        </div>
+            <div class="allTheDataOfMeal">
+                <div class="allAboutMeal">
+                    <h5>Description:</h5>
+                    <p>Loram Maintenance of Way, Inc. is a railroad maintenance equipment and services provider.
+                        Loram provides track maintenance services to freight, passenger,
+                        and transit railroads worldwide, as well as sells and leases equipment which
+                        performs these functions.</p>
+                </div>
+                <div class="alAboutDayAndMeal">
+                    <div class="dayAndMealInnerContainer">
+                        <p id="todayDay">Today, Thursday</p>
                         <div class="daysWeekMonthContainer">
                             <div class="selectorBorder">
                                 <div class="selector">
@@ -102,82 +106,77 @@
                             </div>
                         </div>
                     </div>
-                    <div class="weekWholeData">
-                        <div class="Pie-Chart-Data-Container d-flex">
-                            <div class="Pie-Chart-Container">
-                                <div class="chart-container">
-                                    <canvas id="chart-sunday" class="my-chart"></canvas>
-                                </div>
-                                <p>Sn</p>
-                            </div>
-                            <div class="Pie-Chart-Data-Container d-flex">
-                                <div class="Pie-Chart-Container">
-                                    <div class="chart-container">
-                                        <canvas id="chart-monday" class="my-chart"></canvas>
-                                    </div>
-                                    <p>Mn</p>
-                                </div>
-                            </div>
-                            <div class="Pie-Chart-Data-Container d-flex">
-                                <div class="Pie-Chart-Container">
-                                    <div class="chart-container">
-                                        <canvas id="chart-tuesday" class="my-chart"></canvas>
-                                    </div>
-                                    <p>Tu</p>
-                                </div>
-                            </div>
-                            <div class="Pie-Chart-Data-Container d-flex">
-                                <div class="Pie-Chart-Container">
-                                    <div class="chart-container">
-                                        <canvas id="chart-wednesday" class="my-chart"></canvas>
-                                    </div>
-                                    <p>Wd</p>
-                                </div>
-                            </div>
-                            <div class="Pie-Chart-Data-Container d-flex">
-                                <div class="Pie-Chart-Container">
-                                    <div class="chart-container">
-                                        <canvas id="chart-thursday" class="my-chart"></canvas>
-                                    </div>
-                                    <p>Th</p>
-                                </div>
-                            </div>
-                            <div class="Pie-Chart-Data-Container d-flex">
-                                <div class="Pie-Chart-Container">
-                                    <div class="chart-container">
-                                        <canvas id="chart-friday" class="my-chart"></canvas>
-                                    </div>
-                                    <p>Fr</p>
-                                </div>
-                            </div>
-                            <div class="Pie-Chart-Data-Container d-flex">
-                                <div class="Pie-Chart-Container">
-                                    <div class="chart-container">
-                                        <canvas id="chart-saturday" class="my-chart"></canvas>
-                                    </div>
-                                    <p>St</p>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+
+            <div class="eatingToday">
+                <p>What we are eating today?</p>
+            </div>
+            <div class="foodVariety">
+                <div class="steakContainer">
+                    <img src="Images/steak.png" alt="">
+                    <div class="steakAndIngredients">
+                        <p>Steak</p>
+                        <span>Need 3 Ingredients</span>
                     </div>
                 </div>
-                <div class="averageWeightIncreasePerDay">
-                    <p>Average Weight Increase Per day</p>
-                    <p>(2.1 KG) per day</p>
+                <div class="vegFoodContainer">
+                    <img src="Images/vegFood.png" alt="">
+                    <div class="vegAndIngredients">
+                        <p>veg Food</p>
+                        <span>Need 3 Ingredients</span>
+                    </div>
                 </div>
-                <div class="moreDetailsMainContainer">
-                    <div class="moreDetailsinnerContainer">
-                        <p>See More Details</p>
+                <div class="mealContainer">
+                    <img src="Images/meal(2).png" alt="">
+                    <div class="mealAndIngredients">
+                        <p>Meal</p>
+                        <span>Need 3 Ingredients</span>
+                    </div>
+                </div>
+                <div class="steakContainer">
+                    <img src="Images/steak.png" alt="">
+                    <div class="steakAndIngredients">
+                        <p>Steak</p>
+                        <span>Need 3 Ingredients</span>
+                    </div>
+                </div>
+                <div class="vegFoodContainer">
+                    <img src="Images/vegFood.png" alt="">
+                    <div class="vegAndIngredients">
+                        <p>veg Food</p>
+                        <span>Need 3 Ingredients</span>
+                    </div>
+                </div>
+                <div class="mealContainer">
+                    <img src="Images/meal(2).png" alt="">
+                    <div class="mealAndIngredients">
+                        <p>Meal</p>
+                        <span>Need 3 Ingredients</span>
+                    </div>
+                </div>
+
+                <div class="steakContainer">
+                    <img src="Images/steak.png" alt="">
+                    <div class="steakAndIngredients">
+                        <p>Steak</p>
+                        <span>Need 3 Ingredients</span>
                     </div>
                 </div>
             </div>
-            <div class="monthlyOverview">
-                <div class="monthlyOverviewDaysWeek">
+            <div class="moreDetailsMainContainer">
+                <div class="moreDetailsinnerContainer">
+                    <p>See More Details</p>
+                </div>
+            </div>
+            <div class="monthlyOverviewMealContainer">
+                <div class="monthlyOverviewDaysWeekMealContainer">
                     <p id="monthlyOverviewPara">Monthly Overview</p>
                     <div class="weeksDaysContainers">
                         <div class="selectorBorder">
                             <div class="selector">
-                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     <p>
                                         Month</p><span>
                                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none"
@@ -196,129 +195,165 @@
                         </div>
                     </div>
                 </div>
-                <div class="chartContainer">
-                    <canvas id="weightTrackerBarChart" width="600" height="200"></canvas>
+                <div class="foodVariety">
+                    <div class="steakContainer">
+                        <img src="Images/steak.png" alt="">
+                        <div class="steakAndIngredients">
+                            <p>Steak</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="vegFoodContainer">
+                        <img src="Images/vegFood.png" alt="">
+                        <div class="vegAndIngredients">
+                            <p>veg Food</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="mealContainer">
+                        <img src="Images/meal(2).png" alt="">
+                        <div class="mealAndIngredients">
+                            <p>Meal</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="steakContainer">
+                        <img src="Images/steak.png" alt="">
+                        <div class="steakAndIngredients">
+                            <p>Steak</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="vegFoodContainer">
+                        <img src="Images/vegFood.png" alt="">
+                        <div class="vegAndIngredients">
+                            <p>veg Food</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="mealContainer">
+                        <img src="Images/meal(2).png" alt="">
+                        <div class="mealAndIngredients">
+                            <p>Meal</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+
+                    <div class="steakContainer">
+                        <img src="Images/steak.png" alt="">
+                        <div class="steakAndIngredients">
+                            <p>Steak</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="foodVariety">
+                    <div class="steakContainer">
+                        <img src="Images/steak.png" alt="">
+                        <div class="steakAndIngredients">
+                            <p>Steak</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="vegFoodContainer">
+                        <img src="Images/vegFood.png" alt="">
+                        <div class="vegAndIngredients">
+                            <p>veg Food</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="mealContainer">
+                        <img src="Images/meal(2).png" alt="">
+                        <div class="mealAndIngredients">
+                            <p>Meal</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="steakContainer">
+                        <img src="Images/steak.png" alt="">
+                        <div class="steakAndIngredients">
+                            <p>Steak</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="vegFoodContainer">
+                        <img src="Images/vegFood.png" alt="">
+                        <div class="vegAndIngredients">
+                            <p>veg Food</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="mealContainer">
+                        <img src="Images/meal(2).png" alt="">
+                        <div class="mealAndIngredients">
+                            <p>Meal</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+
+                    <div class="steakContainer">
+                        <img src="Images/steak.png" alt="">
+                        <div class="steakAndIngredients">
+                            <p>Steak</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="foodVariety">
+                    <div class="steakContainer">
+                        <img src="Images/steak.png" alt="">
+                        <div class="steakAndIngredients">
+                            <p>Steak</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="vegFoodContainer">
+                        <img src="Images/vegFood.png" alt="">
+                        <div class="vegAndIngredients">
+                            <p>veg Food</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="mealContainer">
+                        <img src="Images/meal(2).png" alt="">
+                        <div class="mealAndIngredients">
+                            <p>Meal</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="steakContainer">
+                        <img src="Images/steak.png" alt="">
+                        <div class="steakAndIngredients">
+                            <p>Steak</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="vegFoodContainer">
+                        <img src="Images/vegFood.png" alt="">
+                        <div class="vegAndIngredients">
+                            <p>veg Food</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="mealContainer">
+                        <img src="Images/meal(2).png" alt="">
+                        <div class="mealAndIngredients">
+                            <p>Meal</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
+
+                    <div class="steakContainer">
+                        <img src="Images/steak.png" alt="">
+                        <div class="steakAndIngredients">
+                            <p>Steak</p>
+                            <span>Need 3 Ingredients</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        const ctx = document.getElementById('weightTrackerBarChart').getContext('2d');
-        const weightTrackerBarChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: Array.from({ length: 31 }, (_, i) => i + 1), // Days 1 to 31
-                datasets: [{
-                    label: 'Weight (kg)',
-                    data: [57.0, 57.1, 57.2, 57.3, 57.4, 57.5, 57.3, 57.2, 57.4, 57.6, 57.1, 57.0, 57.4, 57.6, 57.5, 57.3, 57.1, 57.7, 57.5, 57.3, 57.4, 57.5, 57.6, 57.4, 57.2, 57.7, 57.5, 57.4, 57.6, 57.7, 57.8], // Sample weight data
-                    backgroundColor: '#7CBA22', // Greenish color as in the design
-                    borderColor: '#7CBA22',
-                    barThickness: 8.8, // Adjust bar thickness
-                    borderRadius: {
-                        topLeft: 8, // Rounded top corners
-                        topRight: 8,
-                        bottomLeft: 0,
-                        bottomRight: 0
-                    }
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: false,
-                        min: 56.0, // Set minimum weight for the y-axis
-                        max: 58.0, // Set maximum weight for the y-axis
-                        title: {
-                            display: true,
-                        },
-                        ticks: {
-                            stepSize: 0.5, // Increment by 0.5 kg
-                            callback: function (value) {
-                                return value + ' kg'; // Display kg unit
-                            }
-                        },
-                        grid: {
-                            display: false,
-                            color: '#E0E0E0' // Light grey grid lines
-                        }
-                    },
-                    x: {
-                        title: {
-                            display: true,
-                        },
-                        grid: {
-                            display: false // Hide x-axis grid lines
-                        }
-                    }
-                },
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function (context) {
-                                return context.dataset.label + ': ' + context.raw + ' kg';
-                            }
-                        }
-                    }
-                }
-            }
-        });
-        const weightData = {
-            sunday: [2.5, 55],  // Example weight data
-            monday: [2.0, 55.5],
-            tuesday: [1.8, 55.7],
-            wednesday: [2.1, 55.9],
-            thursday: [1.9, 56],
-            friday: [2.2, 56.1],
-            saturday: [2.4, 56.3],
-        };
-
-        // Chart IDs (as used earlier)
-        const chartIds = [
-            'chart-sunday',
-            'chart-monday',
-            'chart-tuesday',
-            'chart-wednesday',
-            'chart-thursday',
-            'chart-friday',
-            'chart-saturday'
-        ];
-
-        chartIds.forEach((id) => {
-            const canvas = document.getElementById(id);
-            const day = id.split('-')[1];
-
-            new Chart(canvas, {
-                type: "doughnut",
-                data: {
-                    labels: ["Weight Gain", "Base Weight"],
-                    datasets: [
-                        {
-                            label: "Weight Tracking",
-                            data: weightData[day],
-                            backgroundColor: ["#91AF01", "#45437F"], // Adjust colors accordingly
-                        },
-                    ],
-                },
-                options: {
-                    rotation: Math.PI, // Start angle (180 degrees)
-                    circumference: Math.PI, // Draw only half of the doughnut (180 degrees)
-                    borderWidth: 0,
-                    borderRadius: 0,
-                    hoverBorderWidth: 0,
-                    plugins: {
-                        legend: {
-                            display: false,
-                        },
-                    },
-                },
-                plugins: [centerTextPlugin],
-            });
-        });
-
-    </script>
     <script src="chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
