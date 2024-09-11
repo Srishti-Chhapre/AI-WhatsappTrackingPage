@@ -502,12 +502,16 @@ a {
   flex-direction: column;
 }
 .chart-container {
-  width: 100px;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
 }
 .Pie-Chart-data-Container {
   margin-left: -20px;
+}
+.Pie-Chart-Data-Container{
+  gap: 2rem;
 }
 .weekWholeData {
   margin-bottom: 4px;
@@ -1402,9 +1406,10 @@ margin-bottom: 21px;
   flex-direction: column;
 }
 .chart-container {
-  width: 100px;
+  width: 60px;
   display: flex;
   justify-content: center;
+  height: 60px;
 }
 .Pie-Chart-data-Container {
   margin-left: -20px;
@@ -1415,6 +1420,9 @@ margin-bottom: 21px;
 .daysWeekMonthContainer {
   display: flex;
   gap: 13px;
+}
+.Pie-Chart-Data-Container{
+  gap: 2rem !important;
 }
 .monthlyOverview {
   height: 361px;
